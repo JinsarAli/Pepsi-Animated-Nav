@@ -1,0 +1,147 @@
+@font-face {
+  font-family: sofia pro;
+  src: url(./font/sofiapro/Fonts/sofiapro-light.otf);
+}
+body {
+    background-color: #1a2d98 !important;
+  }
+.navbar {
+  background-color: rgb(0 37 255);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.nav-item {
+  margin-right: 1.5rem;
+  font-size: 0.8rem;
+  font-family: sofia pro;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-item > a {
+  color: #fff;
+}
+
+.navbar-brand {
+  margin-right: 50px !important;
+}
+
+.pepsi-btn {
+  font-size: 0.8rem;
+  /* height: 2.3rem; */
+  padding: 2px 30px;
+  border-radius: 1.8rem;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: sofia pro;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pepsi-btn:hover {
+  background-color: #fff;
+  color: rgb(0 37 255);
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes tada {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+.logo:hover {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.box {
+  /* width: 100%; */
+  height: fit-content;
+  position: relative;
+  /* background-color: red; */
+}
+
+body > img{
+    width: 100%;
+}
